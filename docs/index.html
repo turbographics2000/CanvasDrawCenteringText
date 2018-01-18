@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="kuromoji.js"></script>
+    <script defer src="main.js"></script>
+    <style>
+        .container {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        canvas {
+            border: 2px solid;
+        }
+
+        img {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 3px solid rgb(236, 121, 226);
+        }
+
+        textarea {
+            width: 300px;
+            height: 300px;
+            border: 3px solid rgb(121, 121, 236);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">&lt;canvas&gt;</div>
+        <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+    <div class="container">
+        <div class="title">&lt;img&gt;</div>
+        <img id="img">
+        <a id="dl" download="textimage.png"></a>
+    </div>
+    <div>
+        <div class="container">
+            <div class="title">&lt;textarea&gt;</div>
+            <textarea id="input"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
