@@ -1,4 +1,4 @@
-kuromoji.builder({ dicPath: '/dict' }).build((err, tokenizer) => {
+kuromoji.builder({ dicPath: 'CanvasDrawCenteringText/dict' }).build((err, tokenizer) => {
     var path = tokenizer.tokenize('すももももももももの\nうち');
     const canvas = document.querySelector('#canvas');
     const ctx = canvas.getContext('2d');
